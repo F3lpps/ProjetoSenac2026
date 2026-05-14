@@ -1,14 +1,16 @@
 # Viajei
 O Projeto **Viajei** tem como objetivo transmitir sensações que desejamos que outros sintam, isto é, através de nossas vivencias compartilhar aquilo que recordamos de maior valor. Estas vivencias podem estar relacionadas a qualquer tema(Ex: livros, filmes, series, esportes, cozinha, etc...).
 
-O **Viajei**, por razões apropriadas é indicado para maiores de 14(quartorze) anos.
+> ![WARNING]
+> O **Viajei**, por razões apropriadas é indicado para maiores de 14(quartorze) anos. **Não recomendamos** que pessoas com idade menor do indicado, tenham acesso à plataforma.
 
 
-## O que é?
+## O que será?
 
-O Viajei será uma plataforma digital, em que as pessoas podem
-compartilhar suas experiências em formato de texto e deixar suas 
-recomendações para outras pessoas. 
+O Viajei será uma plataforma em que usuários poderão, individualmente, compartilhar suas experiências, e também, recomendar outras tantas para pessoas que acessarem essa plataforma.
+
+> ![IMPORTANT]
+> A plataforma **não** suporta múltiplos usuários. Isto não é uma rede social virtual. Para compartilhar suas peripécias, por favor, compartilhe o link de sua história.
 
 ## Tecnologias:
 
@@ -19,7 +21,7 @@ recomendações para outras pessoas.
 - BACK-END:
   - PYTHON ou NODE ou PHP;
   - SQL;
-
+- 
 ## Como rodar:
 
 TODO:
