@@ -21,7 +21,7 @@ O Viajei será uma plataforma em que usuários poderão, individualmente, compar
 - BACK-END:
   - PYTHON ou NODE ou PHP;
   - SQL;
-- 
+
 ## Como rodar:
 
 TODO:
