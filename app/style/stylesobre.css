@@ -2,13 +2,16 @@
     box-sizing: border-box;
 }
 
+
 body {
     width: 80vw;
     box-sizing: border-box;
-    margin: 0 auto;   
+    margin: 0 auto; 
+    background-color: white;  
+    
 }
 
-#container {
+container {
     width: 80vw;
     margin: 0 auto;
 }
@@ -35,6 +38,18 @@ header img {
 
 }
 
+section {
+    align-items: center;
+    margin: 0%;
+}
+
+header img {
+    max-height: 80%;
+    margin: auto 0;
+    color: white;
+
+}
+
 .link-cabecalho {
     font-family: "VT323", monospace;
     font-weight: 400px;
@@ -48,22 +63,16 @@ header a:hover {
     box-shadow: 2px 2px 2px 2px #8a32fd;
 }
 
-
 #container section {
     width: 100%;
     height: 80vh;
-    background-image: url(./images/background.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    
+    background-color: #804abe;
 }
 
-b {
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 80vh;
-    width: 77vw;
-    padding-bottom: 326px;
+h1 {
+    font-family: "Comic Relief", system-ui;
+}
+
+h2 {
+    font-family: "Comic Relief", system-ui;
 }
