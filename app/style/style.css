@@ -41,6 +41,7 @@ header img {
     font-size: 35px;
     text-decoration: none;
     color: white;
+    border-radius: 15px
 }
 
 header a:hover {
@@ -51,19 +52,56 @@ header a:hover {
 
 #container section {
     width: 100%;
-    height: 80vh;
+    min-height: 80vh;
+
     background-image: url(./images/background.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 10px;
+
+    padding: 40px 20px;
 }
 
-b {
+/* TEXTO */
+
+section h1 {
     font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 80vh;
-    width: 77vw;
-    padding-bottom: 326px;
+    font-size: 25px;
+    margin-top: -40;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 10px #ac6cff;;
+    text-align: center;
 }
+
+h1 {
+    overflow: hidden;
+    white-space: nowrap;
+
+    display: inline-block;
+
+    animation: digitando 3.5s steps(29, end) infinite;
+}
+
+@keyframes digitando {
+    from { width: 0 }
+    to { width: 29ch; }
+}
+
+
+/* IMAGEM */
+
+section img {
+    width: 450px;
+    max-width: 90%;
+    height: auto;
+    margin-top: -80px;
+}
+

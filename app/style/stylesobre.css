@@ -4,16 +4,18 @@
 
 
 body {
+    height: 100vh;
     width: 80vw;
     box-sizing: border-box;
     margin: 0 auto; 
-    background-color: white;  
-    
+    background-color: #7c17ffb6;  
+
 }
 
 container {
     width: 80vw;
     margin: 0 auto;
+    background-color: #7A17FF;
 }
 
 header {
@@ -41,13 +43,14 @@ header img {
 section {
     align-items: center;
     margin: 0%;
+    background-color: #804abe;
+    background-position: top;
 }
 
 header img {
     max-height: 80%;
     margin: auto 0;
     color: white;
-
 }
 
 .link-cabecalho {
@@ -56,6 +59,7 @@ header img {
     font-size: 35px;
     text-decoration: none;
     color: white;
+    border-radius: 15px
 }
 
 header a:hover {
@@ -63,16 +67,37 @@ header a:hover {
     box-shadow: 2px 2px 2px 2px #8a32fd;
 }
 
-#container section {
-    width: 100%;
-    height: 80vh;
-    background-color: #804abe;
-}
 
 h1 {
-    font-family: "Comic Relief", system-ui;
+    font-family: "VT323", system-ui;
+    color: white;
 }
 
 h2 {
-    font-family: "Comic Relief", system-ui;
+    font-family: "VT323", system-ui;
+    color: white;
+}
+
+p {
+overflow: hidden; 
+/* Esconde o texto que ainda não foi digitado */
+border-right: 3px solid #00ffcc; 
+/* O cursor piscando */
+white-space: nowrap; 
+/* Impede que o texto quebre de linha */
+animation: 
+    digitando 3s steps(30, end) forwards,
+    pisca-cursor 0.75s step-start infinite;
+}
+
+/* Animação que vai revelando as letras */
+@keyframes digitando {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Animação do cursor piscando */
+@keyframes pisca-cursor {
+  from, to { border-color: transparent }
+  50% { border-color: #00ffcc; }
 }
