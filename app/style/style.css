@@ -60,41 +60,57 @@ header a:hover {
     background-position: center;
 
     display: flex;
-    flex-direction: column;
-
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start;
 
-    gap: 10px;
+    gap: 80px;
 
-    padding: 40px 20px;
+    padding: 40px;
 }
 
 /* TEXTO */
 
-section h1 {
+.texto {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 500px;
+
+    color: white;
+
     font-family: sans-serif;
-    font-size: 25px;
-    margin-top: -40;
-    color: rgb(255, 255, 255);
-    text-shadow: 3px 3px 10px #ac6cff;;
-    text-align: center;
+
+    gap: 15px;
 }
 
-h1 {
-    overflow: hidden;
-    white-space: nowrap;
+.texto p {
+    margin: 0;
 
-    display: inline-block;
+    font-size: 22px;
+    line-height: 1.5;
 
-    animation: digitando 3.5s steps(29, end) infinite;
+    opacity: 0;
+
+    animation-name: fadeTexto;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
-@keyframes digitando {
-    from { width: 0 }
-    to { width: 29ch; }
+.texto h1 {
+    font-size: 55px;
+    margin: 0;
+
+    color: #ffffff;
+
+    text-shadow: 0 0 10px #ac6cff;
 }
 
+.texto h2 {
+    font-size: 28px;
+    margin: 0;
+
+    color: #d6b7ff;
+}
 
 /* IMAGEM */
 
@@ -105,3 +121,32 @@ section img {
     margin-top: -80px;
 }
 
+/* ANIMAÇÃO */
+
+@keyframes fadeTexto {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.texto p:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.texto p:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.texto p:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.texto p:nth-child(4) {
+    animation-delay: 6s;
+}
