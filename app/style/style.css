@@ -3,18 +3,18 @@
 }
 
 body {
-    width: 80vw;
+    width: 100vw;
     box-sizing: border-box;
-    margin: 0 auto;   
+    margin: 0 auto;  
+    background-color: #ac6cff; 
 }
 
 #container {
     width: 80vw;
-    margin: 0 auto;
 }
 
 header {
-    width: 100%;
+    width: 100vw;
     height: 80px;
     display: flex;
     justify-content: space-evenly;
@@ -51,8 +51,8 @@ header a:hover {
 
 
 #container section {
-    width: 100%;
-    min-height: 80vh;
+    width: 100vw;
+    min-height: 92vh;
 
     background-image: url(./images/background.png);
     background-repeat: no-repeat;
@@ -71,10 +71,11 @@ header a:hover {
 /* TEXTO */
 
 .texto {
+    
     display: flex;
     flex-direction: column;
 
-    max-width: 500px;
+    max-width: 900px;
 
     color: white;
 
@@ -84,12 +85,12 @@ header a:hover {
 }
 
 .texto p {
-    margin: 0;
-
+    margin-top: 0;
     font-size: 22px;
     line-height: 1.5;
 
     opacity: 0;
+    
 
     animation-name: fadeTexto;
     animation-duration: 2s;
@@ -118,7 +119,7 @@ section img {
     width: 450px;
     max-width: 90%;
     height: auto;
-    margin-top: -80px;
+    margin-top: -210px;
 }
 
 /* ANIMAÇÃO */
@@ -149,4 +150,10 @@ section img {
 
 .texto p:nth-child(4) {
     animation-delay: 6s;
+}
+
+@media (max-width: 600px) {
+    header img {
+        max-height: 100px;
+    }
 }

@@ -24,7 +24,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #7A17FF;
+    background-image: url(./images/background.png);
     border-right: 6px solid #9040f8;
     border-bottom: 6px solid #9040f8;
     border-bottom-left-radius: 10px;
@@ -78,26 +78,26 @@ h2 {
     color: white;
 }
 
-p {
+/**p {
 overflow: hidden; 
 /* Esconde o texto que ainda não foi digitado */
-border-right: 3px solid #00ffcc; 
+/*border-right: 3px solid #00ffcc; 
 /* O cursor piscando */
-white-space: nowrap; 
+/*white-space: nowrap; 
 /* Impede que o texto quebre de linha */
-animation: 
+/*animation: 
     digitando 3s steps(30, end) forwards,
     pisca-cursor 0.75s step-start infinite;
 }
 
 /* Animação que vai revelando as letras */
-@keyframes digitando {
+/* @keyframes digitando {
   from { width: 0 }
   to { width: 100% }
 }
 
 /* Animação do cursor piscando */
-@keyframes pisca-cursor {
+/* @keyframes pisca-cursor {
   from, to { border-color: transparent }
   50% { border-color: #00ffcc; }
 }
