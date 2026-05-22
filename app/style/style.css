@@ -50,37 +50,29 @@ header a:hover {
 }
 
 
-#container section {
+.principal {
     width: 100vw;
     min-height: 92vh;
-
     background-image: url(./images/background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
-    gap: 80px;
-
+    gap: 40px;
     padding: 40px;
 }
 
 /* TEXTO */
 
 .texto {
-    
+
     display: flex;
     flex-direction: column;
-
     max-width: 900px;
-
     color: white;
-
     font-family: sans-serif;
-
     gap: 15px;
 }
 
@@ -88,10 +80,7 @@ header a:hover {
     margin-top: 0;
     font-size: 22px;
     line-height: 1.5;
-
     opacity: 0;
-    
-
     animation-name: fadeTexto;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -100,16 +89,13 @@ header a:hover {
 .texto h1 {
     font-size: 55px;
     margin: 0;
-
     color: #ffffff;
-
     text-shadow: 0 0 10px #ac6cff;
 }
 
 .texto h2 {
     font-size: 28px;
     margin: 0;
-
     color: #d6b7ff;
 }
 
@@ -152,40 +138,54 @@ section img {
     animation-delay: 6s;
 }
 
-/* MEDIA QUERY*/
+/* MEDIA QUERY CORRIGIDO*/
 
 @media (max-width: 600px) {
     header img {
-        max-height: 82px;
-    }
-    .link-cabecalho {
-        max-height: 82px;
-        max-width: 75px;
-    }
-    #container section {
-        max-height: 80px;
-        max-width: 915px;
+        max-height: 40px; 
     }
 
+    .link-cabecalho {
+        font-size: 24px; 
+    }
+
+    header {
+        height: auto;
+        min-height: 80px;
+        flex-direction: row; 
+        padding: 10px 15px;
+        background-image: url(./images/background.png);
+        border: none;
+    }
+
+    .principal {
+        width: 100%; 
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+        padding: 20px;
+    }
 
     section img {
         display: none;
     }
-    .texto p {
-        margin-top: 35px;
-        display: flex;
-        flex-direction: initial;
-        max-height: 80px
+
+    .texto {
+        width: 100%;
+        gap: 10px;
     }
-    header {
-        height: 120px;
-        background-image: url(./images/background.png);
-        border-right: 6px solid transparent;
-        border-bottom: 6px solid transparent;
-        border-bottom-left-radius: transparent;
-        border-bottom-right-radius: transparent;
-        border-top-right-radius: transparent;
-        border-top-left-radius: transparent;
-        
+    
+    .texto p {
+        margin-top: 15px;
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .texto h1 {
+        font-size: 38px;
+        margin-top: 10px;
+    }
+
+    .texto h2 {
+        font-size: 24px;
     }
 }
