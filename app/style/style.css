@@ -152,7 +152,9 @@ section img {
     animation-delay: 6s;
 }
 
-@media (max-width: 412px) {
+/* Media Query*/
+
+@media (max-width: 600px) {
     header img {
         max-height: 82px;
     }
