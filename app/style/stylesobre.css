@@ -1,25 +1,25 @@
-* { /*seletor universal*/
+* { /* seletor universal */
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
 
 body {
-    height: 100vh;
-    width: 80vw;
-    box-sizing: border-box;
-    margin: 0 auto; 
+    min-height: 100vh;
+    width: 100%; /* Mudado de 100vw para 100% para eliminar o vazamento */
     background-image: url(./images/background.png);  
-
+    background-size: cover; /*escala uma imagem de fundo para ser a menor possível, garantindo que todo o contêiner seja coberto*/
+    background-position: center;
+    background-attachment: fixed; /*Determina como uma imagem de fundo se comporta quando um usuário executa uma página ou um elemento*/
 }
 
-container {
-    width: 80vw;
+#container {
+    width: 100%; /* Mudado de 100vw para 100% */
     margin: 0 auto;
-    background-color: #7A17FF;
 }
 
 header {
-    width: 100%;
+    width: 100%; /* Mudado de 100vw para 100% -- agora ele cola nas pontas sem vazar */
     height: 80px;
     display: flex;
     justify-content: space-evenly;
@@ -36,30 +36,32 @@ header {
 header img {
     max-height: 80%;
     margin: auto 0;
-    color: white;
-
 }
 
-section {
+
+main section {
+    width: 80%; 
+    max-width: 900px; /* Impede o texto de espalhar demais em telas gigantes */
+    margin: 0 auto; 
+    padding: 40px 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     align-items: center;
-    margin: 0%;
     background-color: transparent;
-    background-position: top;
-}
-
-header img {
-    max-height: 80%;
-    margin: auto 0;
-    color: white;
+    font-size: 18px;
+    line-height: 1.6; 
 }
 
 .link-cabecalho {
     font-family: "VT323", monospace;
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 35px;
     text-decoration: none;
     color: white;
-    border-radius: 15px
+    border-radius: 15px;
+    padding: 5px 10px;
 }
 
 header a:hover {
@@ -67,33 +69,48 @@ header a:hover {
     box-shadow: 2px 2px 2px 2px #8a32fd;
 }
 
-
 h1 {
     font-family: "VT323", system-ui;
+    font-size: 48px;
     color: white;
+    text-shadow: 0 0 10px #ac6cff;
 }
 
 h2 {
     font-family: "VT323", system-ui;
+    font-size: 36px;
     color: white;
+    text-shadow: 0 0 10px #ac6cff;
 }
 
+.citacao {
+    font-family: "VT323", monospace;
+    font-size: 32px;
+    text-align: center;
+    color: #d6b7ff;
+    margin: 20px 0;
+    text-shadow: 0 0 8px #7A17FF;
+}
 
 @media (max-width: 600px) {
-    header nav img {
-        max-height: 82px;
-}
     header {
         background-image: url(./images/background.png);
-        border-right: 0;
-        border-bottom: 0;
-        border-bottom-left-radius: 10;
-        border-bottom-right-radius: 0;
-        border-top-right-radius: 0;
-        border-top-left-radius: 0;
+        height: auto;
+        min-height: 80px;
+        border: none;
+        padding: 10px;
     }
+    
+    header img {
+        max-height: 40px;
+    }
+
     .link-cabecalho {
-        max-height: 82px;
-        max-width: 75px;
+        font-size: 24px;
+        max-height: none;
+        max-width: none;
     }
+    
+    h1 { font-size: 36px; }
+    h2 { font-size: 28px; }
 }
