@@ -3,14 +3,19 @@
 }
 
 body {
+    min-height: 100vh;
     width: 100%;
     box-sizing: border-box;
     margin: 0 auto;  
     background-image: url(./images/background.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 #container {
     width: 100%;
+    margin: 0 auto;
 }
 
 header {
@@ -31,17 +36,16 @@ header {
 header img {
     max-height: 80%;
     margin: auto 0;
-    color: white;
-
 }
 
 .link-cabecalho {
     font-family: "VT323", monospace;
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 35px;
     text-decoration: none;
     color: white;
     border-radius: 15px
+    padding: 5px 10px;
 }
 
 header a:hover {
