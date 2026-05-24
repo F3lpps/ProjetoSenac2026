@@ -2,7 +2,7 @@
 O Projeto **Viajei** tem como objetivo transmitir sensações que desejamos que outros sintam, isto é, através de nossas vivências compartilhar aquilo que recordamos de maior valor. Estas vivencias podem estar relacionadas a qualquer tema(Ex: livros, filmes, series, esportes, cozinha, etc...).
 
 > [!WARNING]
-> O **Viajei**, por razões apropriadas é indicado para maiores de 14(quartorze) anos. **Não recomendamos** que pessoas com idade menor do indicado, tenham acesso à plataforma.
+> O **Viajei**, por razões apropriadas é indicado para maiores de 14(quatorze) anos. **Não recomendamos** que pessoas com idade menor do indicado, tenham acesso à plataforma.
 
 
 ## O que será?
