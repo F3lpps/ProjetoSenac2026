@@ -1,0 +1,54 @@
+* { /*seletor universal*/
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    box-sizing: border-box;
+    margin: 0 auto;  
+    background-image: url(./images/background.png);
+}
+
+#container {
+    width: 80vw;
+}
+
+header {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #7A17FF;
+    border-right: 6px solid #9040f8;
+    border-bottom: 6px solid #9040f8;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 5px;
+}
+
+header img {
+    max-height: 80%;
+    margin: auto 0;
+    color: white;
+
+}
+
+.link-cabecalho {
+    font-family: "VT323", monospace;
+    font-weight: 400px;
+    font-size: 35px;
+    text-decoration: none;
+    color: white;
+    border-radius: 15px
+}
+
+header a:hover {
+    background-color: #ac6cff;
+    box-shadow: 2px 2px 2px 2px #8a32fd;
+}
+
+container section form {
+    display: flex;
+}
