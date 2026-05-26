@@ -49,6 +49,11 @@ header a:hover {
     box-shadow: 2px 2px 2px 2px #8a32fd;
 }
 
+textarea {
+    display: flex;
+    justify-content: center;
+}
+
 @media (max-width: 600px) {
     header {
         background-image: url(./images/background.png);
@@ -71,4 +76,5 @@ header a:hover {
     main section {
         min-width: 300px;
     }
+
 }
