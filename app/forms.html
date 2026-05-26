@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/stylesobre.css">
+    <script src="./style/images/scripts/forms.js" defer></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
@@ -21,22 +22,28 @@
 </header>
         <main>
             <section> 
-    <form action="submit">
-        <label for="usuário">Nome:
-            <input type="text" name="Nome" id="usuario">
-                </label>
+        <form id="post-form">
 
-        <label for="Historia">historia
-            <textarea name="Historia:" id="historia" cols="30" rows="10">
-                </textarea>
-                    </label>
+        <label for="autor">Nome:</label>
+            <input type="text" name="autor" id="autor" placeholder="fulaninho">
 
-                <label for="day">Data</label>
-                 <input type="datetime-local">
-                 <input type="submit" value="Viajar">
-                </form>
+        <label for="usermail">Email:</label>
+            <input type="email" name="email" id="usermail" placeholder="fulaninho@gmail.com">
+
+        <label for="titulo">Titulo da história:</label>
+        <input type="text" name="titulo" id="titulo" placeholder="fulaninho"><br>
+
+        <label for="historia">História:</label>
+            <textarea name="historia" id="historia" cols="30" rows="10" style="width: 883px;
+        height: 363px;"></textarea>
+
+                 <button type="submit">Viajar</button>
             </section>
+            </form>
         </main>
+        <footer> 
+            <div id="historias"></div>
+        </footer>
     </div>
 </body>
 </html>

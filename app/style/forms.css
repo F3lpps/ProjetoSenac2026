@@ -49,6 +49,26 @@ header a:hover {
     box-shadow: 2px 2px 2px 2px #8a32fd;
 }
 
-container section form {
-    display: flex;
+@media (max-width: 600px) {
+    header {
+        background-image: url(./images/background.png);
+        height: auto;
+        min-height: 80px;
+        border: none;
+        padding: 10px;
+    }
+    
+    header img {
+        max-height: 40px;
+    }
+
+    .link-cabecalho {
+        font-size: 24px;
+        max-height: none;
+        max-width: none;
+    }
+
+    main section {
+        min-width: 300px;
+    }
 }
