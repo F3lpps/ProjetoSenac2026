@@ -49,10 +49,108 @@ header a:hover {
     box-shadow: 2px 2px 2px 2px #8a32fd;
 }
 
-textarea {
+main {
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
 }
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea {
+    resize: vertical;
+    width: 80%;
+    max-width: 900px;
+    height: 250px;
+}
+
+#post-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    padding: 30px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.campos-topo {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.campo {
+    display: flex;
+    align-items: flex-end;
+}
+
+#historias {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.artigo {
+    width: 70%;
+    max-width: 750px;
+    background-color: rgba(255, 255, 255, 0.96);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px, 8px, 20px, rgba(0, 0, 0, 0.15);
+    border-left: 6pxpx solid #716088;
+    transition: 0.2s ease;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.artigo hover {
+    transform: translateY(-5px);
+}
+
+.artigo topo h2 {
+    margin: 0;
+    font-size: 42px;
+    font-family: "VT323", monospace;
+    color: #7A17FF
+}
+
+.autor {
+    margin-top: 10px;
+    font-size: 15px;
+    opacity: 0.7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.artigo conteudo {
+    margin-top: 25px;
+    font-size: 20px;
+    line-height: 1.9;
+    font-family: "Comic Relief", cu;
+    color: #222;
+    width: 100%;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
 
 @media (max-width: 600px) {
     header {
@@ -61,6 +159,8 @@ textarea {
         min-height: 80px;
         border: none;
         padding: 10px;
+        flex-wrap: wrap;
+        gap: 10px;
     }
     
     header img {
@@ -71,6 +171,36 @@ textarea {
         font-size: 24px;
         max-height: none;
         max-width: none;
+    }
+
+    #post-form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .campos-topo {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .campo {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .campo input {
+        width: 100%;
+    }
+
+    textarea {
+        width: 95%;
+        height: 250px;
+    }
+
+    button {
+        width: 200px;
+        height: 45px;
     }
 
     main section {

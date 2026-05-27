@@ -21,13 +21,21 @@ form.addEventListener('submit', function(event) {
         const article = document.createElement('article');
         article.className = "artigo";
 
-        article.innerHTML =
-                `<h3>${titulo}</h3>
-         <p><strong> Autor: ${autor} </strong></p>
-         <p>${historia.replace('/\n/g', '<br />')}</p>
-         <hr />`;
+        article.innerHTML = `
+        <div class="artigo-topo">
+            <h2>${titulo || "História sem título"}</h2>
 
-         document.getElementById('historias').appendChild(article)
+            <p class="autor">
+                por ${autor}
+            </p>
+        </div>
 
-         event.target.reset()
-})
+        <div class="artigo-conteudo">
+            ${historia.replace(/\n/g, "<br>")}
+        </div>
+    `;
+
+    document.getElementById('historias').appendChild(article);
+
+    form.reset();
+});
