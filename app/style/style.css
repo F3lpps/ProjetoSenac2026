@@ -88,6 +88,7 @@ header a:hover {
     margin-top: 0;
     font-size: 22px;
     line-height: 1.5;
+    font-family:  "Atkinson Hyperlegible", sans-serif;
 
     opacity: 0;
     
@@ -95,6 +96,10 @@ header a:hover {
     animation-name: fadeTexto;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+    background-color: transparent;
+    font-weight: bold;
+    border-radius: 6px;
+    padding-left: 10px;
 }
 
 .texto h1 {

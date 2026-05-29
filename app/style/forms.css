@@ -209,6 +209,17 @@ button:hover {
     border-top-left-radius: 5px;
 }
 
+dialog#modal::backdrop{
+    border-radius: 5px;
+    border: none;
+    background-color: #5e594eaa;
+}
+
+dialog#modal-content{
+    background-color: #f4ecd8;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
 
 @media (max-width: 600px) {
     header {
