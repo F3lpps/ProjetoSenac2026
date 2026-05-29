@@ -39,6 +39,7 @@ header img {
     font-family: "VT323", monospace;
     font-weight: 400px;
     font-size: 35px;
+    padding: 5px 10px;
     text-decoration: none;
     color: white;
     border-radius: 15px

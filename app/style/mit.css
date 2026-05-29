@@ -1,0 +1,10 @@
+* { /*seletor universal*/
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    box-sizing: border-box;
+    margin: 0 auto;  
+    background-image: url(./images/background.png);
+}
