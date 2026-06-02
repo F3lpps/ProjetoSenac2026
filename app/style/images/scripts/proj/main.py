@@ -17,5 +17,60 @@ def Club_Felps(nome: str, idade: int):
             else:
                 print("Vaza daqui meo!")
 
+def class_population(idade: int) -> str:
+    if idade <= 12 and idade:
+        return "Criança"
+    if idade > 12 and idade < 18:
+        return "Adolescente"
+    else:
+        return "peter ei nerd"
+
+
+def eh_par(numero:int):
+    if numero % 2:
+return true 
+    else:
+        return false
+
+def calcular_bonus(S:float, a_empresa:int):
+    if a_empresa > 5:
+        return S * 0.1 
+    else:
+        return S * 0.05    
+
+def encontrar_maior(a: float or int, b: float or int, c: float or int):
+    if a > b and a > c:
+        return a
+    if c > b and c > a:
+        return c
+    if b > c and b > a:
+        return b   
+
+def tipo_triangulo(lado1, lado2, lado3):
+...         if lado1 + lado2 > lado3
+                or lado2 + lado3 > lado1
+                    or lado1 + lado3 > lado2:
+...         return "Equilátero"
+...         if lado1 + lado2 < lado3:
+...                 return "Isto não é um triângulo"
+...         if lado1 + lado2 == lado3:
+...                 return "Isósceles"
+...         if lado1 + lado2 + lado3 == lado1 != lado2 != lado3:
+...                 return "Escaleno"
+
+def aprovar_saque(saldo:float, valor_saque: float):
+    if valor_saque <= saldo and valor_saque % 10 == 0:
+        return true
+    else:
+        return false 
+
+if "__name__" == "__main__"
+
+
+
+
+         
+
+    
 
 
