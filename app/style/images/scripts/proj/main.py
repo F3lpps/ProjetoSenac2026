@@ -64,10 +64,18 @@ def aprovar_saque(saldo:float, valor_saque: float):
     else:
         return false 
 
-if "__name__" == "__main__"
+if __name__ == '__main__'
+    fruta = primeira_fruta(frutas)
+        print(fruta)
 
+    frutas = ['Laranja','banana','berga','maça',]
 
+def primeira_fruta(frutas: list)
+        return primeira_fruta[0]
 
+animais = ['Gato','Raposa','cachorro','Koala']
+    def ultimo_animal(animais: list)
+        return ultimo_animal[-1]    
 
          
 
