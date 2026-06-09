@@ -1,4 +1,7 @@
 class Aluno:
+    nome:str
+    notas:list[int]
+
     def __init__(self, nome:str, notas:list):
         self.nome = nome
         self.notas = notas 
@@ -17,7 +20,7 @@ class Aluno:
             
             if media >= 7:
                 return (f"Aprovado!")
-            if media >= 5.0:
+            if media >= 5.0 < 7:
                 return (f"recuperação") 
             else:
                 return (f"Reprovado!")

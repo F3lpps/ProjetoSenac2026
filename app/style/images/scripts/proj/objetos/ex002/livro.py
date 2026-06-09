@@ -1,4 +1,4 @@
-class livro:
+class Livro:
     titulo:str = "Lord of the mysteries"
     autor:str = "Cuttefish that loves dying"
     quantidade_copias:int = "10000"

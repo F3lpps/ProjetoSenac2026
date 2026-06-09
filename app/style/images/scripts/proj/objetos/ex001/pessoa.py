@@ -2,7 +2,7 @@
 
 ## Ex: 001
 
-class pessoa:
+class Pessoa:
     nome:str = "Fulaninho"
     idade:int = 12
 
