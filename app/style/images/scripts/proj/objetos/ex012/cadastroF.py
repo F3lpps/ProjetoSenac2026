@@ -1,6 +1,6 @@
 class Empresa:
     nome:str = "marquespan"
-    funcionarios:list = {}
+    funcionarios:list
 
     def __init__(self, nome:str, funcionarios:list):
         self.nome = nome

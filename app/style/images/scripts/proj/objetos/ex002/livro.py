@@ -15,7 +15,7 @@ class Livro:
     print(f"venda realizada! menos {quantidade_copias}")
 
     def reabastecer(self, numero:int):
-        return self.quantidade_copias + numero
+        self.quantidade_copias = self.quantidade_copias + numero
 
             
 
