@@ -1,0 +1,2 @@
+class ErrodeEntradaInvalida(Exception):
+    pass 
