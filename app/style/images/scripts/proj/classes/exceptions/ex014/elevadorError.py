@@ -1,0 +1,2 @@
+class ElevadorSobrecarregadoError(Exception):
+    pass 

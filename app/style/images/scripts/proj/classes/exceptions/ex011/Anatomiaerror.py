@@ -1,0 +1,2 @@
+class AnatomiaError(Exception):
+    pass 
