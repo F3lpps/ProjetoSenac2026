@@ -1,0 +1,2 @@
+class VagaIndisponivel(Exception):
+    pass
