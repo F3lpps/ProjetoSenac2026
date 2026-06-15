@@ -1,0 +1,2 @@
+class InventarioCheioExceptionError(Exception):
+    pass
