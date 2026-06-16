@@ -1,0 +1,4 @@
+Linha 1: Introdução ao processamento de arquivos.
+Linha 2: Usando blocos try-except para proteção.
+Linha 3: Gerenciadores de contexto com a instrução with.
+Linha 4: Fim do arquivo de testes.

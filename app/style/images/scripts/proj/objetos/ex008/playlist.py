@@ -4,7 +4,7 @@ class Playlist:
 
     def __init__(self, nome:str, musicas:list):
         self.nome = nome
-        self.musicas = musicas[]
+        self.musicas = musicas
 
         def adicionar_musica(self, nome_musica:str):
             musicas.append(nome_musica)

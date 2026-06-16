@@ -1,0 +1,4 @@
+A programação estruturada é essencial para o aprendizado.
+Python facilita muito a automação de scripts.
+Trabalhar com arquivos exige atenção com caminhos de diretório.
+A automação poupa tempo e reduz erros humanos cotidianos.

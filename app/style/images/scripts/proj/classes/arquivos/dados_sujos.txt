@@ -1,0 +1,7 @@
+Registro 1: Ativo
+
+Registro 2: Inativo
+   
+Registro 3: Pendente
+
+Registro 4: Concluído

@@ -1,0 +1,6 @@
+INFO: Conexão estabelecida com o servidor principal.
+DEBUG: Carregando módulos de segurança.
+ERROR: Falha no banco de dados ao tentar salvar registro.
+INFO: Tentativa de reconexão automática executada.
+ERROR: Tempo limite de requisição excedido (Timeout).
+DEBUG: Limpando buffers temporários.
