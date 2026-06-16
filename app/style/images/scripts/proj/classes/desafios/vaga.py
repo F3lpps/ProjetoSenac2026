@@ -7,25 +7,25 @@ class Vaga:
         self.veiculo = None
         self.capacidade: int = 0
         self.h_entrada = None
+        self.tamanho_maximo:float 
+
+    def esta_ocupada(self) -> bool:
+        return self.veiculo is not None
+        
 
 class VagaOnibus(Vaga):
     def __init__(self):
-        super().__init__()
-        self.veiculo = Onibus
-        self.capacidade: int = 0
+        super().__init__(self.tamanho_maximo==15.00)
+        
 
 class VagaCarro(Vaga):
     def __init__(self):
-        super().__init__()
-        self.veiculo = Carro
-        self.capacidade: int = 0
-        self.h_entrada = None
+        super().__init__(self.tamanho_maximo==5.50)
+       
 
 class VagaVan(Vaga):
     def __init__(self):
-        super().__init__()
-        self.veiculo = Van 
-        self.capacidade: int = 0
-        self.h_entrada: int = 0 
+        super().__init__(self.tamanho_maximo==7.50)
+         
 
     
