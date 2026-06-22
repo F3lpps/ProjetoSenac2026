@@ -23,7 +23,7 @@ def analisar_dimensoes_casa(nome_arquivo):
         counteudo_interno = linha[primeiro_igual + 1: ultimo_igual]
         area_util += len(counteudo_interno)
 
-        
+
 
         
  
