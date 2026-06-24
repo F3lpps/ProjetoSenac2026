@@ -1,8 +1,29 @@
-from fast_zero.app import app
+from http import HTTPStatus
+
 from fastapi.testclient import TestClient
 
+from ViajeiAPI.app import app
 
-def Ola_mundoHtml():
+
+@app.get('/')
+def read_root():
+    return {'message': '( ͡° ͜ʖ ͡° )'}
+
+
+def Register():
     client = TestClient(app)
-    response = client.get('/teste')
-    assert '<h1> Olá Mundo </h1>' in response.text
+
+    response = client.post(
+        '/auth/',
+        json={
+            'username': 'baianinhodemaua',
+            'email': 'baianinho@example.com',
+            'password': 'secret',
+        },
+    )
+    assert response.status_code == HTTPStatus.CREATED
+    assert response.json() == {
+        'username': 'baianinhodemaua',
+        'email': 'baianinho@example.com',
+        'id': 1,
+    }

@@ -1,24 +1,23 @@
-from fastapi import FastAPI
-from fastapi.responses import HTMLResponse
+from http import HTTPStatus
 
-from ViajeiAPI.schemas import Message
+from fastapi import FastAPI
+
+from ViajeiAPI.schemas.user import User, UserDB, Userpublic
 
 app = FastAPI()
 
+database = []
 
-@app.get('/', response_model=Message)
+
+@app.get('/')
 def read_root():
-    return {"message": "(͠≖ ͜ʖ͠≖)👌"}
+    return {'message': '(⌐■_■)👌'}
 
 
-@app.get('/teste', response_class=HTMLResponse)
-def Ola_mundo():
-    return """
-<html>
-      <head>
-        <title> Fala, mundo </title>
-      </head>
-      <body>
-        <h1> Olá Mundo </h1>
-      </body>
-    </html>"""
+@app.post("/auth/", status_code=HTTPStatus.CREATED, response_model=Userpublic)
+def register(user: User):
+    user_with_id = UserDB(**user.model_dump(), id=len(database) + 1)
+
+    database.append(user_with_id)
+
+    return user_with_id
