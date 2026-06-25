@@ -1,29 +1,37 @@
 from http import HTTPStatus
 
-from fastapi.testclient import TestClient
 
-from ViajeiAPI.app import app
-
-
-@app.get('/')
 def read_root():
-    return {'message': '( ͡° ͜ʖ ͡° )'}
+    return {"message": "(⌐■_■)👌"}
 
 
-def Register():
-    client = TestClient(app)
+def Register(client):
 
     response = client.post(
-        '/auth/',
+        "/auth/",
         json={
-            'username': 'baianinhodemaua',
-            'email': 'baianinho@example.com',
-            'password': 'secret',
+            "username": "baianinhodemaua",
+            "email": "baianinho@example.com",
+            "password": "secret",
         },
     )
     assert response.status_code == HTTPStatus.CREATED
     assert response.json() == {
-        'username': 'baianinhodemaua',
-        'email': 'baianinho@example.com',
-        'id': 1,
+        "username": "baianinhodemaua",
+        "email": "baianinho@example.com",
+        "id": 1,
+    }
+
+
+def test_read_users(client):
+    response = client.get('/users/')
+    assert response.status_code == HTTPStatus.OK
+    assert response.json() == {
+        'users': [
+            {
+                'username': 'baianinhodemaua',
+                'email': 'baianinho@example.com',
+                'id': 1,
+            }
+        ]
     }
