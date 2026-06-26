@@ -11,11 +11,11 @@ class UserDB(User):
     id: int
 
 
-class Userpublic(BaseModel):
+class UserPublic(BaseModel):
     id: int
     username: str
     email: EmailStr
 
 
 class Userlist(BaseModel):
-    users: list[Userpublic]
+    users: list[UserPublic]

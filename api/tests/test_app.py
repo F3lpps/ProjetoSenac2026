@@ -5,16 +5,17 @@ def read_root():
     return {"message": "(⌐■_■)👌"}
 
 
-def Register(client):
+def test_create_user(client):
 
     response = client.post(
-        "/auth/",
+        "/users/",
         json={
             "username": "baianinhodemaua",
             "email": "baianinho@example.com",
-            "password": "secret",
+            "senha": "secret",
         },
     )
+    print(response.json())
     assert response.status_code == HTTPStatus.CREATED
     assert response.json() == {
         "username": "baianinhodemaua",
@@ -24,14 +25,14 @@ def Register(client):
 
 
 def test_read_users(client):
-    response = client.get('/users/')
+    response = client.get("/users/")
     assert response.status_code == HTTPStatus.OK
     assert response.json() == {
-        'users': [
+        "users": [
             {
-                'username': 'baianinhodemaua',
-                'email': 'baianinho@example.com',
-                'id': 1,
+                "username": "baianinhodemaua",
+                "email": "baianinho@example.com",
+                "id": 1,
             }
         ]
     }
