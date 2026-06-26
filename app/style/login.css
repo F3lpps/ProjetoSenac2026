@@ -6,7 +6,8 @@ body {
     min-height: 100vh;
     width: 100%;
     box-sizing: border-box;
-    margin: 0 auto;  
+    margin: 0 auto;
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
     background-image: url(./images/background.png);
 }
 
@@ -46,9 +47,10 @@ header img {
 
 .campo {
     display: flex;
-    gap: 5px;
+    gap: 8px;
     flex-direction: column;
     width: 500px;
+    padding: 16px 20px;
     background-color: white;
     backdrop-filter: blur(8px);
     border: none;
@@ -59,6 +61,36 @@ header img {
     border-top-right-radius: 4px;
     border-top-left-radius: 5px;
     box-shadow: 2px 2px 2px 2px #8a32fd;
+}
+
+/* Labels maiores e mais estilizadas */
+.campo label {
+    font-size: 20px;
+    font-weight: 700;
+    color: #5b16c4;
+    letter-spacing: 0.3px;
+}
+
+/* Inputs com um acabamento que combina com o tema roxo */
+.campo input {
+    height: 42px;
+    padding: 0 12px;
+    font-size: 16px;
+    font-family: inherit;
+    color: #333;
+    border: 2px solid #d9c7fb;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.campo input::placeholder {
+    color: #a99fc2;
+}
+
+.campo input:focus {
+    border-color: #8a32fd;
+    box-shadow: 0 0 0 3px rgba(138, 50, 253, 0.2);
 }
 
 main {
@@ -78,19 +110,24 @@ section {
 #post-form {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(8px);
     border-radius: 20px;
-    width: 80%;
-    max-width: 900px;
+    width: fit-content;
     margin: 40px auto;
+    padding: 30px 40px;
 }
 
 button {
     height: 25px;
     width: 200px;
-    margin-top: 0 auto;
+    align-self: center;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #5b16c4;
+    cursor: pointer;
     background-color: white;
     backdrop-filter: blur(8px);
     border: none;
@@ -105,6 +142,7 @@ button {
 
 button:hover {
     background-color: #ac6cff;
+    color: white;
     border-right: 4px solid #ac6cff;
     border-bottom: 4px solid #ac6cff;
     border-bottom-left-radius: 4px;
@@ -123,7 +161,7 @@ button:hover {
         flex-wrap: wrap;
         gap: 10px;
     }
-    
+
     header img {
         max-height: 40px;
     }
@@ -132,6 +170,16 @@ button:hover {
         font-size: 24px;
         max-height: none;
         max-width: none;
+    }
+
+    .campos-topo,
+    .campo {
+        width: 100%;
+    }
+
+    #post-form {
+        width: 90%;
+        padding: 20px;
     }
 
     button {
