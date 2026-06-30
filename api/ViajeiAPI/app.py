@@ -29,13 +29,24 @@ def read_users():
     return {"users": database}
 
 
-@app.delete("/users/{user_id}", response_model=Message)
-def delete(user_id: int):
+@app.delete('/users/{user_id}', response_model=Message)
+def delete_user(user_id: int):
     if user_id > len(database) or user_id < 1:
         raise HTTPException(
-            status_code=HTTPStatus.NOT_FOUND, detail="User not found"
+            status_code=HTTPStatus.NOT_FOUND, detail='User not found'
         )
 
     del database[user_id - 1]
 
-    return {"message": "User deleted"}
+    return {"message": "User deleted!"}
+
+
+@app.get("/users/{user_id}", status_code=HTTPStatus.OK)
+def get_id(user_id: int):
+    if user_id in database:
+        raise HTTPStatus.OK
+
+    else:
+        raise HTTPException(
+            status_code=HTTPStatus.NOT_FOUND, detail="Id not found"
+        )

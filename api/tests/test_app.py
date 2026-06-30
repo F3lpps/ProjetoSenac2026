@@ -24,6 +24,23 @@ def test_create_user(client):
     }
 
 
+def test_delete_user(client):
+
+    # When
+    response = client.delete("/users/1")
+
+    # Then
+    response.status_code == HTTPStatus.OK
+    response.json() == {"message": "User deleted!"}
+
+
+def test_delete_404(client):
+    response = client.delete("/users/0")
+
+    assert response.status_code == HTTPStatus.NOT_FOUND
+    assert response.json() == {"detail": "User not found"}
+
+
 def test_read_users(client):
     response = client.get("/users/")
     assert response.status_code == HTTPStatus.OK
