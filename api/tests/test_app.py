@@ -35,12 +35,29 @@ def test_delete_user(client):
 
 
 def test_delete_404(client):
+
     response = client.delete("/users/0")
 
-    assert response.status_code == HTTPStatus.NOT_FOUND
-    assert response.json() == {"detail": "User not found"}
+    response.status_code == HTTPStatus.NOT_FOUND
+    response.json() == {"message": "User not found"} 
 
+def test_get_200(client):
 
+    response = client.get("/users/1")
+
+    response.status_code == HTTPStatus.OK
+    response.json() == {
+        "email": "baianinho@example.com",
+        "id": 1,
+    }
+
+def test_get_notfound(client):
+
+    response = client.get("/users/0")
+
+    response.status_code == HTTPStatus.NOT_FOUND
+    response.json() == {"detail": "User not found"}
+    
 def test_read_users(client):
     response = client.get("/users/")
     assert response.status_code == HTTPStatus.OK
