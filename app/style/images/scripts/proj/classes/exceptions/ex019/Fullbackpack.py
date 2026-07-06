@@ -1,2 +1,0 @@
-class InventarioCheioExceptionError(Exception):
-    pass

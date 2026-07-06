@@ -1,2 +1,0 @@
-class ItemInutilExceptionError(Exception):
-    pass 

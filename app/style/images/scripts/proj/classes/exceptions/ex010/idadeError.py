@@ -1,2 +1,0 @@
-class IdadeinvalidaError(Exception):
-    pass 

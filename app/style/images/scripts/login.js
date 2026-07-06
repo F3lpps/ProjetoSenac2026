@@ -1,4 +1,4 @@
-const form = document.getElementById('post-form');
+const form = document.getElementById('auth');
 
 form.addEventListener('submit', function(event) {
 

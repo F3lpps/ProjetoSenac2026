@@ -1,2 +1,0 @@
-class LimiteTamanhoError(Exception):
-    pass

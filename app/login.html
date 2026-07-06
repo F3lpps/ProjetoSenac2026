@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/app/style/login.css">
     <script type="module" src="./style/images/scripts/login.js"></script>
+    <script src="style/images/scripts/navbar.js"></script>
+    <script src="style/images/scripts/auth.js" defer></script>
     <title>Loginpage</title>
     <h2>Bem vindo, Viajante</h2>
 </head>
 <body>
     <main>
         <section>
-            <form id="post-form" action="/app/index.html" method="POST">
+            <form id="auth" action="/app/index.html" method="POST">
 
                 <div class="campos-topo">
 
@@ -30,7 +32,8 @@
                         <input type="password" name="password" id="password" placeholder="Digite uma senha...">
                     </div>
 
-                    <button type="submit">Entrar</button>
+                    <button type="submit" id="login_acc">Entrar</button>
+                    <button type="submit" id="create_acc">Criar conta</button>
 
                 </div>
 
