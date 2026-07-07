@@ -19,11 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
             url = 'http://localhost:8000/users'; 
             mensagemErroPadrao = 'Erro ao criar conta. Verifique os dados.';
             headers['Content-Type'] = 'application/json'
-            request_body = JSON.stringify({email: email, password: password})
+            request_body = JSON.stringify({username: user, email: email, senha: password})
         } else {
             const params = new URLSearchParams();
-            params.append('username', user)
-            params.append('email', email);    
+            params.append('username', email);    
             params.append('password', password); 
             request_body = params
 
